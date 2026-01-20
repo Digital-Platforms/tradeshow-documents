@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Services partagés Canada – Plateformes numériques et interopérabilité</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --dark-blue: #26374a;
+            --medium-blue: #2b4380;
+            --purple-accent: #6f2c91;
+            --light-grey: #f8f8f8;
+            --border-grey: #e1e4e7;
+            --text-dark: #1a1a1a;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--light-grey);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 4px solid var(--dark-blue);
+            position: relative;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 25px 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        /* GCWeb-style English link */
+        .lang-switch {
+            position: absolute;
+            top: 0px;
+            right: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+        }
+
+        .lang-switch a {
+            color: #284162;
+            text-decoration: underline;
+        }
+
+        .lang-switch a:hover,
+        .lang-switch a:focus {
+            color: #0535d2;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4em;
+            margin: 0;
+        }
+
+        .sub-title {
+            display: block;
+            font-size: 0.9em;
+            font-weight: normal;
+            margin-top: 4px;
+        }
+
+        .header-logo {
+            height: auto;
+            max-height: 90px;
+            opacity: 0.9;
+            margin-right: 170px;
+        }
+
+        .underline {
+            width: 80px;
+            height: 4px;
+            background: var(--purple-accent);
+            margin-top: 10px;
+        }
+
+        nav {
+            background: var(--dark-blue);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1100px;
+            display: flex;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 22px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background: var(--medium-blue);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            border: 1px solid var(--border-grey);
+            border-radius: 4px;
+        }
+
+        main h2 {
+            margin-top: 0;
+            color: var(--dark-blue);
+        }
+
+        main p {
+            line-height: 1.6;
+            max-width: 900px;
+        }
+
+        footer {
+            background: #ffffff;
+            border-top: 1px solid var(--border-grey);
+            margin-top: 60px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .canada-wordmark img {
+            height: 32px;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            main {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            .footer-inner {
+                justify-content: center;
+            }
+
+            .lang-switch {
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="header-content">
+
+            <!-- GCWeb-style English link -->
+            <div class="lang-switch">
+                <a href="../index.html">English</a>
+            </div>
+
+            <h1>
+                Plateformes numériques & interopérabilité
+                <span class="sub-title">Services partagés Canada</span>
+            </h1>
+
+            <img
+                src="../gallery/images/ssc-leaf-purple.png"
+                alt="Services partagés Canada"
+                class="header-logo"
+            >
+        </div>
+
+        <div class="underline"></div>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projects_index.html">Projets</a></li>
+        <li><a href="gallery/index.html">Galerie</a></li>
+        <li><a href="contact_index.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Objectif</h2>
+    <p>
+        Ce site offre un aperçu du contenu du salon sur les plateformes numériques et l’interopérabilité aux Services partagés Canada (SPC). Il rassemble les points saillants des projets, les documents de référence et les éléments visuels qui favorisent la collaboration et le partage des connaissances entre les équipes.
+    </p>
+    <p>
+        Les initiatives mises en vedette incluent l’impression 3D et la conception, l’identification par radiofréquence (RFID), les jumeaux numériques et l’Internet des objets (IoT). Ces projets démontrent comment les SPC explorent et appliquent les technologies émergentes pour soutenir des services numériques fiables, sécurisés et modernes, conformément aux priorités du gouvernement du Canada. C’est un espace pour se connecter, apprendre et stimuler l’innovation au sein de nos équipes et initiatives.
+    </p>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="canada-wordmark">
+            <img
+                src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-fr.svg"
+                alt="Gouvernement du Canada"
+            >
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
