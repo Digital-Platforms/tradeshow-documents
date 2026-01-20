@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Services partagés Canada – Galerie des plateformes numériques</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* GCWeb / SSC-aligned colours */
+            --dark-blue: #26374a;
+            --medium-blue: #2b4380;
+            --purple-accent: #6f2c91;
+            --light-grey: #f8f8f8;
+            --border-grey: #e1e4e7;
+            --text-dark: #1a1a1a;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--light-grey);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 4px solid var(--dark-blue);
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 25px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4em;
+            margin: 0;
+        }
+
+        .sub-title {
+            font-size: 0.9em;
+            display: block;
+            margin-top: 0.2em;
+            font-weight: normal;
+        }
+
+        .underline {
+            width: 80px;
+            height: 4px;
+            background: var(--purple-accent);
+            margin-top: 10px;
+        }
+
+        .header-logo img {
+            height: 90px;
+            margin-right: 170px;
+        }
+
+        nav {
+            background: var(--dark-blue);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1100px;
+            display: flex;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 22px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background: var(--medium-blue);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            border: 1px solid var(--border-grey);
+            border-radius: 4px;
+        }
+
+        main h2 {
+            margin-top: 0;
+            color: var(--dark-blue);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 3rem;
+            color: #ffffff;
+            cursor: pointer;
+            user-select: none;
+            padding: 10px;
+        }
+
+        .nav-arrow.left {
+            left: 30px;
+        }
+
+        .nav-arrow.right {
+            right: 30px;
+        }
+
+        footer {
+            background: #ffffff;
+            border-top: 1px solid var(--border-grey);
+            margin-top: 60px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .canada-wordmark img {
+            height: 32px;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            nav ul { flex-wrap: wrap; }
+            h1 { font-size: 2em; }
+            main { margin: 20px; padding: 25px; }
+            .footer-inner { justify-content: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div>
+            <h1>
+                Plateformes numériques et interopérabilité<br>
+                <span class="sub-title">Services partagés Canada</span>
+            </h1>
+            <div class="underline"></div>
+        </div>
+        <div class="header-logo">
+            <img src="../gallery/images/ssc-leaf-purple.png" alt="Services partagés Canada">
+        </div>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projects_index.html">Projets</a></li>
+        <li><a href="gallery_index.html">Galerie</a></li>
+        <li><a href="contact_index.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Galerie</h2>
+    <p>Découvrez des photos de nos salons professionnels et événements. Cliquez sur une image pour l’agrandir.</p>
+
+    <div class="gallery-grid">
+        <img src="images/photo1.jpg" alt="Photo de la galerie 1">
+        <img src="images/photo2.jpg" alt="Photo de la galerie 2">
+        <img src="images/photo3.jpg" alt="Photo de la galerie 3">
+        <img src="images/photo4.jpg" alt="Photo de la galerie 4">
+        <img src="images/photo5.jpg" alt="Photo de la galerie 5">
+        <img src="images/photo6.jpg" alt="Photo de la galerie 6">
+        <img src="images/photo7.jpg" alt="Photo de la galerie 7">
+        <img src="images/photo8.jpg" alt="Photo de la galerie 8">
+        <img src="images/photo9.jpg" alt="Photo de la galerie 9">
+        <img src="images/photo10.jpg" alt="Photo de la galerie 10">
+        <img src="images/photo11.jpg" alt="Photo de la galerie 11">
+        <img src="images/photo12.jpg" alt="Photo de la galerie 12">
+        <img src="images/photo13.jpg" alt="Photo de la galerie 13">
+        <img src="images/photo14.jpg" alt="Photo de la galerie 14">
+        <img src="images/photo15.jpg" alt="Photo de la galerie 15">
+        <img src="images/photo16.jpg" alt="Photo de la galerie 16">
+    </div>
+</main>
+
+<div class="lightbox" id="lightbox">
+    <span class="nav-arrow left" id="prev">&#10094;</span>
+    <img id="lightbox-img" src="">
+    <span class="nav-arrow right" id="next">&#10095;</span>
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <div class="canada-wordmark">
+            <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-fr.svg" alt="Gouvernement du Canada">
+        </div>
+    </div>
+</footer>
+
+<script>
+    const images = document.querySelectorAll('.gallery-grid img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        currentIndex = index;
+        lightboxImg.src = images[index].src;
+        lightbox.style.display = 'flex';
+    }
+
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => showImage(index));
+    });
+
+    prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        lightboxImg.src = images[currentIndex].src;
+    });
+
+    nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentIndex = (currentIndex + images.length) % images.length;
+        lightboxImg.src = images[currentIndex].src;
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (lightbox.style.display !== 'flex') return;
+        if (e.key === 'ArrowLeft') prevBtn.click();
+        if (e.key === 'ArrowRight') nextBtn.click();
+        if (e.key === 'Escape') lightbox.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
