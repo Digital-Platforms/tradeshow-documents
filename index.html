@@ -39,6 +39,28 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
+        }
+
+        /* NEW: language switch */
+        .lang-switch {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 0.9em;
+        }
+
+        .lang-switch a {
+            color: #ffffff;
+            background: var(--medium-blue);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 10px;
+            border-radius: 4px;
+        }
+
+        .lang-switch a:hover {
+            background: var(--dark-blue);
         }
 
         h1 {
@@ -156,6 +178,12 @@
 <header>
     <div class="header-inner">
         <div class="header-content">
+
+            <!-- NEW: Français link -->
+            <div class="lang-switch">
+                <a href="fr/index.html">Français</a>
+            </div>
+
             <h1>
                 Digital Platforms & Interoperability
                 <span class="sub-title">Shared Services Canada</span>
@@ -204,7 +232,3 @@
 
 </body>
 </html>
-
-
-
-
