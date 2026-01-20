@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Services partagés Canada – Contact des plateformes numériques</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* GCWeb / SSC-aligned colours */
+            --dark-blue: #26374a;
+            --medium-blue: #2b4380;
+            --purple-accent: #6f2c91;
+            --light-grey: #f8f8f8;
+            --border-grey: #e1e4e7;
+            --text-dark: #1a1a1a;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--light-grey);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 4px solid var(--dark-blue);
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 25px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4em;
+            margin: 0;
+        }
+
+        .sub-title {
+            font-size: 0.9em;
+            display: block;
+            margin-top: 0.2em;
+            font-weight: normal;
+        }
+
+        .underline {
+            width: 80px;
+            height: 4px;
+            background: var(--purple-accent);
+            margin-top: 10px;
+        }
+
+        .header-logo img {
+            height: 90px;
+            margin-right: 170px;
+        }
+
+        nav {
+            background: var(--dark-blue);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1100px;
+            display: flex;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 22px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background: var(--medium-blue);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            border: 1px solid var(--border-grey);
+            border-radius: 4px;
+        }
+
+        main h2 {
+            margin-top: 0;
+            color: var(--dark-blue);
+        }
+
+        main p {
+            line-height: 1.6;
+            max-width: 900px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+        }
+
+        .contact-list li {
+            margin-bottom: 15px;
+        }
+
+        .contact-list a {
+            text-decoration: none;
+            color: var(--dark-blue);
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .contact-list a:hover {
+            color: var(--purple-accent);
+        }
+
+        footer {
+            background: #ffffff;
+            border-top: 1px solid var(--border-grey);
+            margin-top: 60px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .canada-wordmark img {
+            height: 32px;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            nav ul { flex-wrap: wrap; }
+            h1 { font-size: 2em; }
+            .sub-title { font-size: 0.8em; }
+            main { margin: 20px; padding: 25px; }
+            .footer-inner { justify-content: center; }
+            .header-inner { flex-direction: column; align-items: flex-start; }
+            .header-logo { margin-top: 15px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div>
+            <h1>
+                Plateformes numériques et interopérabilité<br>
+                <span class="sub-title">Services partagés Canada</span>
+            </h1>
+            <div class="underline"></div>
+        </div>
+        <div class="header-logo">
+            <img src="../gallery/images/ssc-leaf-purple.png" alt="Services partagés Canada">
+        </div>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projects_index.html">Projets</a></li>
+        <li><a href="gallery_index.html">Galerie</a></li>
+        <li><a href="contact_index.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Contact</h2>
+    <p>
+        Pour toute demande d’impression, de conception personnalisée ou de prototypage rapide,
+        veuillez communiquer avec
+        <a href="mailto:aldina.paquette@ssc-spc.gc.ca">aldina.paquette@ssc-spc.gc.ca</a>.
+    </p>
+
+    <h2>Notre équipe</h2>
+    <p>
+        Communiquez avec les membres clés de l’équipe des plateformes numériques.
+        Cliquez sur un nom pour consulter son profil dans le Répertoire électronique du gouvernement du Canada (GEDS).
+    </p>
+
+    <ul class="contact-list">
+        <li><a href="https://www.geds-sage.gc.ca/en/GEDS?pgid=015&dn=Q049TUlDSEVMLkdBVVRISUVSOUBTU0MtU1BDLkdDLkNBLE9VPURFLUhOLE9VPUNUT0ItREdEUFQsT1U9U1NDLVNQQyxPPUdDLEM9Q0E=" target="_blank">Michel Gauthier</a></li>
+        <li><a href="https://www.geds-sage.gc.ca/en/GEDS?pgid=015&dn=Q049RVJJQy5QT1dFUlNAU1NDLVNQQy5HQy5DQSxPVT1EUEktUE5JLE9VPURFLUhOLE9VPUNUT0ItREdEUFQsT1U9U1NDLVNQQyxPPUdDLEM9Q0E%3D" target="_blank">Eric Powers</a></li>
+        <li><a href="https://www.geds-sage.gc.ca/en/GEDS?pgid=015&dn=Q049V0lMTElBTS5TQU5UQVJZQFNTQy1TUEMuR0MuQ0EsT1U9RFBJLVBOSSxPVT1ERS1ITixPVT1DVE9CLURHRFBULE9VPVNTQy1TUEMsTz1HQyxDPUNB" target="_blank">William Santary</a></li>
+        <li><a href="https://www.geds-sage.gc.ca/en/GEDS?pgid=015&dn=Q049SkVBTi1GUkFOQ09JUy5ORVJPTkBTU0MtU1BDLkdDLkNBLE9VPURQSS1QTkksT1U9REUtSE4sT1U9Q1RPQi1ER0RQVCxPVT1TU0MtU1BDLE89R0MsQz1DQQ==" target="_blank">Jean-François Néron</a></li>
+        <li><a href="https://www.geds-sage.gc.ca/en/GEDS?pgid=015&dn=Q049QURBTS5IVUlTTUFOQFNTQy1TUEMuR0MuQ0EsT1U9RFBJLVBOSSxPVT1ERS1ITixPVT1DVE9CLURHRFBULE9VPVNTQy1TUEMsTz1HQyxDPUNB" target="_blank">Adam Huisman</a></li>
+        <li><a href="https://www.geds-sage.gc.ca/en/GEDS?pgid=015&dn=Q049T0xJVklBLkRFVklORUBTU0MtU1BDLkdDLkNBLE9VPURQSS1QTkksT1U9REUtSE4sT1U9Q1RPQi1ER0RQVCxPVT1TU0MtU1BDLE89R0MsQz1DQQ==" target="_blank">Olivia Devine</a></li>
+    </ul>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="canada-wordmark">
+            <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-fr.svg" alt="Gouvernement du Canada">
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
