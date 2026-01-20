@@ -8,7 +8,6 @@
 
     <style>
         :root {
-            /* GCWeb / SSC-aligned colours */
             --dark-blue: #26374a;
             --medium-blue: #2b4380;
             --purple-accent: #6f2c91;
@@ -27,6 +26,7 @@
         header {
             background: #ffffff;
             border-bottom: 4px solid var(--dark-blue);
+            position: relative; /* needed for absolute lang toggle */
         }
 
         .header-inner {
@@ -39,28 +39,26 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: relative;
         }
 
-        /* NEW: language switch */
+        /* NEW: GCWeb-style Français link */
         .lang-switch {
             position: absolute;
-            top: 0;
-            right: 0;
-            font-size: 0.9em;
+            top: 20px;
+            right: 20px;
         }
 
         .lang-switch a {
-            color: #ffffff;
-            background: var(--medium-blue);
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+            color: #284162; /* GCWeb default */
             text-decoration: none;
-            font-weight: 600;
-            padding: 6px 10px;
-            border-radius: 4px;
         }
 
-        .lang-switch a:hover {
-            background: var(--dark-blue);
+        .lang-switch a:hover,
+        .lang-switch a:focus {
+            color: #0535d2; /* GCWeb hover/focus */
+            text-decoration: underline;
         }
 
         h1 {
@@ -180,7 +178,7 @@
     <div class="header-inner">
         <div class="header-content">
 
-            <!-- NEW: Français link -->
+            <!-- GCWeb-style Français link -->
             <div class="lang-switch">
                 <a href="fr/index.html">Français</a>
             </div>
@@ -233,11 +231,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
