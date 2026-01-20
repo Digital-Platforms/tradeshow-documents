@@ -39,18 +39,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
         }
 
-        /* NEW: GCWeb-style Français link */
+        /* GCWeb-style Français link aligned with logo */
         .lang-switch {
             position: absolute;
-            top: 20px;
-            right: 20px;
+            top: 50%; /* vertically center with header content */
+            right: 170px; /* same as logo margin-right */
+            transform: translateY(-50%);
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
         }
 
         .lang-switch a {
-            font-family: Arial, sans-serif;
-            font-size: 0.95em;
             color: #284162; /* GCWeb default */
             text-decoration: none;
         }
@@ -78,7 +80,7 @@
             height: auto;
             max-height: 90px;
             opacity: 0.9;
-            margin-right: 170px;
+            margin-right: 170px; /* keeps alignment with lang-switch */
         }
 
         .underline {
@@ -168,6 +170,10 @@
             .footer-inner {
                 justify-content: center;
             }
+
+            .lang-switch {
+                right: 20px; /* smaller screens adjustment */
+            }
         }
     </style>
 </head>
@@ -178,7 +184,7 @@
     <div class="header-inner">
         <div class="header-content">
 
-            <!-- GCWeb-style Français link -->
+            <!-- GCWeb-style Français link aligned with logo -->
             <div class="lang-switch">
                 <a href="fr/index.html">Français</a>
             </div>
