@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Services partagés Canada – Plateformes numériques et interopérabilité</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --dark-blue: #26374a;
+            --medium-blue: #2b4380;
+            --purple-accent: #6f2c91;
+            --light-grey: #f8f8f8;
+            --border-grey: #e1e4e7;
+            --text-dark: #1a1a1a;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--light-grey);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 4px solid var(--dark-blue);
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 25px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4em;
+            margin: 0;
+        }
+
+        .sub-title {
+            font-size: 0.9em;
+            font-weight: normal;
+            display: block;
+            margin-top: 4px;
+        }
+
+        .underline {
+            width: 80px;
+            height: 4px;
+            background: var(--purple-accent);
+            margin-top: 10px;
+        }
+
+        .header-logo {
+            max-height: 90px;
+            height: auto;
+            opacity: 0.9;
+            margin-right: 170px;
+        }
+
+        nav {
+            background: var(--dark-blue);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1100px;
+            display: flex;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 22px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background: var(--medium-blue);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            border: 1px solid var(--border-grey);
+            border-radius: 4px;
+        }
+
+        main h2 {
+            margin-top: 0;
+            color: var(--dark-blue);
+        }
+
+        main p {
+            line-height: 1.6;
+            max-width: 900px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .project-card span {
+            display: block;
+            font-weight: 600;
+        }
+
+        footer {
+            background: #ffffff;
+            border-top: 1px solid var(--border-grey);
+            margin-top: 60px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .canada-wordmark img {
+            height: 32px;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            nav ul { flex-wrap: wrap; }
+            h1 { font-size: 2em; }
+            main { margin: 20px; padding: 25px; }
+            .footer-inner { justify-content: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div>
+            <h1>
+                Plateformes numériques et interopérabilité
+                <span class="sub-title">Services partagés Canada</span>
+            </h1>
+            <div class="underline"></div>
+        </div>
+        <img src="../gallery/images/ssc-leaf-purple.png" alt="Services partagés Canada" class="header-logo">
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projects_index.html">Projets</a></li>
+        <li><a href="../gallery/index.html">Galerie</a></li>
+        <li><a href="contact_index.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Projets</h2>
+    <p>Cliquez sur un projet ci-dessous pour consulter son contenu :</p>
+
+    <div class="project-grid">
+        <a class="project-card" href="../projects/3d-printing-and-design/">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="Dossier impression 3D">
+            <span>Impression 3D et conception</span>
+        </a>
+
+        <a class="project-card" href="../projects/rfid/">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="Dossier RFID">
+            <span>RFID</span>
+        </a>
+
+        <a class="project-card" href="../projects/digital-twins/">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="Dossier jumeaux numériques">
+            <span>Jumeaux numériques</span>
+        </a>
+
+        <a class="project-card" href="../projects/internet-of-things/">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="Dossier IdO">
+            <span>Internet des objets (IdO)</span>
+        </a>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="canada-wordmark">
+            <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-fr.svg" alt="Gouvernement du Canada">
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
