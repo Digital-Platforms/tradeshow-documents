@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shared Services Canada – Digital Platforms & Interoperability</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* GCWeb / SSC-aligned colours */
+            --dark-blue: #26374a;
+            --medium-blue: #2b4380;
+            --purple-accent: #6f2c91;
+            --light-grey: #f8f8f8;
+            --border-grey: #e1e4e7;
+            --text-dark: #1a1a1a;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--light-grey);
+            color: var(--text-dark);
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;
+            border-bottom: 4px solid var(--dark-blue);
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 25px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4em;
+            margin: 0;
+        }
+
+        .sub-title {
+            font-size: 0.9em;
+            font-weight: normal;
+            display: block;
+            margin-top: 4px;
+        }
+
+        .underline {
+            width: 80px;
+            height: 4px;
+            background: var(--purple-accent);
+            margin-top: 10px;
+        }
+
+        .header-logo {
+            max-height: 90px;
+            height: auto;
+            opacity: 0.9;
+            margin-right: 170px;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--dark-blue);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1100px;
+            display: flex;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 22px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background: var(--medium-blue);
+        }
+
+        /* Main content */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            border: 1px solid var(--border-grey);
+            border-radius: 4px;
+        }
+
+        main h2 {
+            margin-top: 0;
+            color: var(--dark-blue);
+        }
+
+        main p {
+            line-height: 1.6;
+            max-width: 900px;
+        }
+
+        /* Project folder grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .project-card span {
+            display: block;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #ffffff;
+            border-top: 1px solid var(--border-grey);
+            margin-top: 60px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .canada-wordmark img {
+            height: 32px;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            nav ul { flex-wrap: wrap; }
+            h1 { font-size: 2em; }
+            main { margin: 20px; padding: 25px; }
+            .footer-inner { justify-content: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div>
+            <h1>
+                Digital Platforms & Interoperability
+                <span class="sub-title">Shared Services Canada</span>
+            </h1>
+            <div class="underline"></div>
+        </div>
+        <img src="gallery/images/ssc-leaf-purple.png" alt="Shared Services Canada" class="header-logo">
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects_index.html">Projects</a></li>
+        <li><a href="gallery/index.html">Gallery</a></li>
+        <li><a href="contact_index.html">Contact</a></li>
+        <li><a href="presentations_index.html">Presentations</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Presentations</h2>
+    <p>Click any presentations below to explore its materials:</p>
+
+    <div class="project-grid">
+        <a class="project-card" href="presentations/3D Printing and Design Bilingual Long Version.pptx">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="3D Printing and Design Bilingual Long Version">
+            <span>3D Printing and Design Bilingual Long Version</span>
+        </a>
+        <a class="project-card" href="presentations/CIPMM - Digital Platform and Interoperability Large Display.pptx">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="CIPMM - Digital Platform and Interoperability Large Display">
+            <span>CIPMM - Digital Platform and Interoperability Large Display</span>
+        </a>
+        <a class="project-card" href="presentations/Digital Twins (EN) - Transforming Government Operations.pptx">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="3D Printing and Design Bilingual Long Version">
+            <span>Digital Twins (EN) - Transforming Government Operations</span>
+        </a>
+
+        <a class="project-card" href="presentations/Digital Twins (FR) - Transformer les operations du gouvernement.pptx">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="Digital Twins (FR) - Transformer les operations du gouvernement">
+            <span>Digital Twins (FR) - Transformer les operations du gouvernement</span>
+        </a>
+
+        <a class="project-card" href="presentations/IoT - Bilingual Poster  Dashboards.pptx">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="IoT - Bilingual Poster  Dashboards">
+            <span>IoT - Bilingual Poster  Dashboards</span>
+        </a>
+
+         <a class="project-card" href="presentations/IoT- Bilingual Long Version.pptx">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="IoT- Bilingual Long Version">
+            <span>IoT- Bilingual Long Version</span>
+        </a>
+
+        
+
+        <!-- <a class="project-card" href="projects/rfid/">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="RFID Folder Icon">
+            <span>RFID</span>
+        </a>-->
+
+        <!-- <a class="project-card" href="projects/digital-twins/">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="Digital Twins Folder Icon">
+            <span>Digital Twins</span>
+        </a> -->
+
+        <!-- <a class="project-card" href="projects/internet-of-things/">
+            <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="IoT Folder Icon">
+            <span>Internet of Things (IoT)</span>
+        </a>  -->
+    </div>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="canada-wordmark">
+            <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada">
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
